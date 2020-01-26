@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>Day 0 data types</title>
+    <meta name="name" content="content" charset="utf-8">
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+
+      process.stdin.resume();
+      process.stdin.setEncoding('utf-8');
+
+      let inputString = '';
+      let currentLine = 0;
+
+      process.stdin.on('data', inputStdin => {
+          inputString += inputStdin;
+      });
+
+      process.stdin.on('end', _ => {
+          inputString = inputString.trim().split('\n').map(string => {
+              return string.trim();
+          });
+
+          main();
+      });
+
+      function readLine() {
+          return inputString[currentLine++];
+      }
+
+
+      function performOperation(secondInteger, secondDecimal, secondString) {
+
+          const firstInteger = 4;
+
+
+          const firstDecimal = 4.0;
+
+
+          const firstString = 'HackerRank ';
+
+          console.log(firstInteger  + parseInt(secondInteger));
+
+          console.log(firstDecimal + parseFloat(secondDecimal));
+
+          console.log(firstString + secondString);
+
+
+      }
+
+
+      function main() {
+          const secondInteger = readLine();
+          const secondDecimal = readLine();
+          const secondString = readLine();
+
+          performOperation(secondInteger, secondDecimal, secondString);
+      }
+      //process.stdin.resu to (); because the error is connected to the bakcend server.
+
+      // you can use the code with the javascript editor or  compiler...
+
+    </script>
+
+
+
+<img src="https://i.hizliresim.com/00vng8.png"/>
+
+
+<style>
+img{
+  display:flex;
+margin:auto;
+  align-items: center;
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
